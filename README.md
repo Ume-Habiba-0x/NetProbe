@@ -4,7 +4,7 @@
 
 Instead of trusting banners, it actively interacts with services and infers their identity from behavior.
 
- 💡 What it does
+ What it does
 
 Given an IP and port, NetProbe:
 
@@ -24,7 +24,7 @@ NetProbe avoids this limitation by:
 This reflects how real-world reconnaissance works.
 
 
-⚙️ Current Capabilities (v0.1)
+ Current Capabilities (v0.1)
 
 * HTTP probing using raw sockets
 * Manual request crafting (`GET / HTTP/1.1`)
@@ -36,7 +36,7 @@ This reflects how real-world reconnaissance works.
   * backend hints (e.g., PHP)
 
 
-🧪 Example Output
+ Example Output
 
 /
 Port 80 → HTTP
@@ -45,7 +45,7 @@ Backend → PHP/5.2.4
 Status → 200 OK
 /
 
- 🚀 Usage
+  Usage
 
 
 python netprobe.py
@@ -56,13 +56,13 @@ Example:
 python
 prob_http("192.168.56.101", 80)
 
-🧰 Tech Stack
+ Tech Stack
 
 * Python
 * TCP sockets
 * Manual protocol interaction
 
-📍 What I learned
+ What I learned
 
 * How raw client–server communication works
 * Why protocols require strict formatting (`\r\n`)
